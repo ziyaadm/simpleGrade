@@ -79,7 +79,7 @@ Accepts a single `grade` object in the request body and inserts it into all `gra
 {
   "id": 3,
   "name": "Tim Davis",
-  "grade": 100,
+  "grade": 50,
   "course": "Web Development"
 }
 ```
