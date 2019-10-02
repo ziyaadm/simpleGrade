@@ -20,8 +20,8 @@ For this project, you will be building a single-page React application that comm
 
 ## NPM Scripts
 
-- `dev` - Start Webpack Dev Server on port `3000` and JSON Server on port `3001`.
-- `build` - Run Webpack to build the React client into `server/public`.
+- `dev` - Start Webpack Dev Server on port `3000` and JSON Server on port `3001`. Visit `http://localhost:3000` in the your browser during development.
+- `build` - Run Webpack to build the React client into `server/public`. This script is generally used for deployment only.
 
 ## Features
 
