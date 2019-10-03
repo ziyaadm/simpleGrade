@@ -1,5 +1,7 @@
 # sgt-react
 
+> - Maintained by: `thebearingedge`
+
 The Student Grade Table: Written in React
 
 ## Introduction
