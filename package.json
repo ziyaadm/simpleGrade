@@ -5,6 +5,7 @@
   "main": "server/index.js",
   "scripts": {
     "client": "webpack-dev-server",
+    "watch": "webpack --watch",
     "start": "node server/index.js",
     "build": "webpack --mode=production",
     "dev": "npm-run-all --silent --parallel start client"
