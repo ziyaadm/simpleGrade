@@ -2,7 +2,10 @@ import React from 'react';
 
 function Header(props) {
   return (
-    <h1 className = "mb-4">{props.text}</h1>
+    <div className="row">
+      <h1 className="col-8">{props.text}</h1>
+      <h2 className="col-4">Average Grade <span className="badge badge-secondary">{props.avgGradeProp}</span></h2>
+    </div>
   );
 }
 
