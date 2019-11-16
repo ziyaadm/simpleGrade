@@ -6,7 +6,7 @@ function GradeTable(props) {
   const gradesArrayToGrade = props.gradesArrayToTable.map((grade, index) => <Grade key = {index} gradeProp = {grade}/>);
 
   return (
-    <table className="table table-striped">
+    <table className="table table-striped float-left col-md-8">
       <thead className = "thead-dark">
         <tr>
           <th scope="col">Student Name</th>
