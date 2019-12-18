@@ -58,10 +58,18 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div className = "container">
-        <Header avgGradeProp = {this.getAverageGrade()} text="Student Grade Table"/>
-        <GradeTable gradesArrayToTable = {this.state.grades} removalMethod = {this.deleteGrade}/>
-        <GradeForm onSubmit={this.addNewGrade}/>
+      <div className="container">
+        <Header
+          avgGradeProp={this.getAverageGrade()}
+          text="Student Grade Table"
+        />
+        <div className="row">
+          <GradeTable
+            gradesArrayToTable={this.state.grades}
+            removalMethod={this.deleteGrade}
+          />
+          <GradeForm onSubmit={this.addNewGrade} />
+        </div>
       </div>
     );
   }

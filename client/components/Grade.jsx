@@ -7,7 +7,13 @@ function Grade(props) {
       <td>{props.gradeProp.course}</td>
       <td>{props.gradeProp.grade}</td>
       <td>
-        <button onClick={() => props.removalProp(props.gradeProp.id)} type="delete" className="btn btn-primary mb-2">Delete</button>
+        <button
+          onClick={() => props.removalProp(props.gradeProp.id)}
+          type="delete"
+          className="btn btn-primary mb-2 btn-danger"
+        >
+          Delete
+        </button>
       </td>
     </tr>
   );
