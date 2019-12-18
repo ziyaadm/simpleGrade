@@ -19,12 +19,6 @@
       "id": 3
     },
     {
-      "name": "Test",
-      "course": "Math",
-      "grade": 12,
-      "id": 14
-    },
-    {
       "name": "Jacob",
       "course": "Hassler",
       "grade": 100,
@@ -38,15 +32,9 @@
     },
     {
       "name": "Test",
-      "course": "Test",
-      "grade": 11,
+      "course": "English 100",
+      "grade": 99,
       "id": 17
-    },
-    {
-      "name": "test",
-      "course": "tests",
-      "grade": 11,
-      "id": 18
     }
   ]
 }

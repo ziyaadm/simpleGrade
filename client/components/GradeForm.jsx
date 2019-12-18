@@ -41,22 +41,77 @@ class GradeForm extends React.Component {
     const gradevalue = this.state.grade;
 
     return (
-      <form onSubmit={this.handleSubmit} onReset={this.handleReset}>
-        <div className="form-group float-right col-md-4">
-          <label htmlFor="formGroupExampleInput"></label>
-          <input name = "name" type="text" className="form-control" id="formGroupExampleInput" placeholder="Name" onChange={this.handleChange} value={namevalue}/>
-        </div>
-        <div className="form-group float-right col-md-4">
-          <label htmlFor="formGroupExampleInput2"></label>
-          <input name="course" type="text" className="form-control" id="formGroupExampleInput2" placeholder="Course" onChange={this.handleChange} value={coursevalue}/>
-        </div>
-        <div className="form-group float-right col-md-4">
-          <label htmlFor="formGroupExampleInput2"></label>
-          <input name = "grade" type="number" className="form-control" id="formGroupExampleInput2" placeholder="Grade" onChange={this.handleChange} value={gradevalue}/>
-          <button type="reset" className="btn btn-primary mb-2 float-right">Cancel</button>
-          <button type="submit" className="btn btn-primary mb-2 float-right">Add</button>
-        </div>
-      </form>
+      <div className="col-3">
+        <form onSubmit={this.handleSubmit} onReset={this.handleReset}>
+          <div className="row">
+            <div className="col-2 align-self-start">
+              <i className="fas fa-user fa-2x"></i>
+            </div>
+            <div className="col-10">
+              <div className="form-group">
+                <input
+                  name="name"
+                  type="text"
+                  className="form-control"
+                  id="formGroupExampleInput"
+                  placeholder="Name"
+                  onChange={this.handleChange}
+                  value={namevalue}
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-2 align-self-start">
+              <i className="fas fa-book fa-2x"></i>
+            </div>
+            <div className="col-10">
+              <div className="form-group">
+                <input
+                  name="course"
+                  type="text"
+                  className="form-control"
+                  id="formGroupExampleInput2"
+                  placeholder="Course"
+                  onChange={this.handleChange}
+                  value={coursevalue}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-2 align-self-start">
+              <i className="fas fa-check fa-2x"></i>
+            </div>
+            <div className="col-10">
+              <div className="form-group">
+                <input
+                  name="grade"
+                  type="number"
+                  className="form-control"
+                  id="formGroupExampleInput3"
+                  placeholder="Grade"
+                  onChange={this.handleChange}
+                  value={gradevalue}
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            type="reset"
+            className="btn btn-primary ml-2 mt-2 float-right btn-warning"
+          >
+            Cancel
+          </button>
+          <button
+            type="submit"
+            className="btn btn-primary mr-2 mt-2 float-right"
+          >
+            Add
+          </button>
+        </form>
+      </div>
     );
   }
 }
