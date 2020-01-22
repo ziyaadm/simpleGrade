@@ -1,11 +1,12 @@
 import React from 'react';
 import Grade from './Grade';
+import GradeForm from './GradeForm';
 
 function GradeTable(props) {
   const gradesArrayToGrade = props.gradesArrayToTable.map((grade, index) => <Grade key={index} gradeProp={grade} removalProp= {props.removalMethod} />);
 
   return (
-    <div className="col-9">
+    <div className="col-12">
       <table className="table table-striped">
         <thead className="thead-dark">
           <tr>
@@ -15,6 +16,9 @@ function GradeTable(props) {
             <th scope="col">Operations</th>
           </tr>
         </thead>
+        <tbody>
+          <GradeForm onSubmit={props.onSubmit}/>
+        </tbody>
         <tbody>{gradesArrayToGrade}</tbody>
       </table>
     </div>
