@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './header';
 import GradeTable from './GradeTable';
-import GradeForm from './GradeForm';
+// import GradeForm from './GradeForm';
 
 class App extends React.Component {
   constructor(props) {
@@ -66,9 +66,10 @@ class App extends React.Component {
         <div className="row">
           <GradeTable
             gradesArrayToTable={this.state.grades}
+            onSubmit={this.addNewGrade}
             removalMethod={this.deleteGrade}
           />
-          <GradeForm onSubmit={this.addNewGrade} />
+          {/* <GradeForm onSubmit={this.addNewGrade} /> */}
         </div>
       </div>
     );
