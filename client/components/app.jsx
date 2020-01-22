@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './header';
 import GradeTable from './GradeTable';
-// import GradeForm from './GradeForm';
 
 class App extends React.Component {
   constructor(props) {
